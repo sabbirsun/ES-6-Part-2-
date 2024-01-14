@@ -25,9 +25,31 @@ console.log(newPerson);*/
 
 // Static Method
 
-class Book{
+/*class Book{
     static fun() {// class name diye static er vitore function call kora
         console.log("Sabbir Sun");
     }
 }
-Book.fun()
+Book.fun();*/
+
+// Inheritance & Super
+
+/*class parent{
+    Assests1(){
+        console.log("This is my grandfather's property");
+    }
+    Assests2(){
+        console.log("This is my father's property");
+    }
+}
+
+class Ami extends parent{// extends er maddhome bap dadar property qke call kore
+    // MyAssests(){
+    //     super.Assests1();
+    //     super.Assests2();
+    // }
+}
+let MyAssests = new Ami();
+MyAssests.Assests1();
+MyAssests.Assests2();*/
+

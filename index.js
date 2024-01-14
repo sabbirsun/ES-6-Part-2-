@@ -70,3 +70,7 @@ console.log(fun(50,30));*/
 
 // ES6 Symbols
 
+let Sym = Symbol("Sabbir");
+let Sym1 = Symbol("Sabbir");
+console.log(Sym===Sym1);
+

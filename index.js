@@ -70,7 +70,18 @@ console.log(fun(50,30));*/
 
 // ES6 Symbols
 
-let Sym = Symbol("Sabbir");
+/*let Sym = Symbol("Sabbir"); // More parts in YT Tutorial
 let Sym1 = Symbol("Sabbir");
-console.log(Sym===Sym1);
+console.log(Sym===Sym1);*/
 
+// Iterators
+
+/*// let array = ['a','b','c','d','e']; // More parts in YT Tutorial
+// for(let i = 0; i <array.length; i++){
+//     console.log(array[i]);
+// }
+
+let array = ['a','b','c','d','e'];
+for(Element of array){
+    console.log(Element);
+}*/

@@ -118,7 +118,7 @@ Sun3.forEach((x) => console.log(x));
 
 // ES6 Map Function
 
-// let Sun = [1,2,3,4,5];
+/*// let Sun = [1,2,3,4,5];
 // let Sun1 = [];
 
 // Sun.forEach(myFun)
@@ -134,5 +134,14 @@ let Sun1 = Sun.map(myFun);
 function myFun(x){
     return x*2;
 }
-console.log(Sun1);
+console.log(Sun1);*/
+
+// Array Function Filter()
+
+/*let Sun = [1,2,3,4,5];
+let Sun1 = Sun.filter(myFun);
+function myFun(x){
+    return x < 3;
+}
+console.log(Sun1);*/
 

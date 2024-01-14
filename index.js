@@ -116,3 +116,23 @@ Sun3.forEach((x) => console.log(x));
 //     console.log(z);
 // }*/
 
+// ES6 Map Function
+
+// let Sun = [1,2,3,4,5];
+// let Sun1 = [];
+
+// Sun.forEach(myFun)
+
+// function myFun(x){
+//     Sun1.push(x*2);
+// }
+// console.log(Sun1);
+
+let Sun = [1,2,3,4,5];
+let Sun1 = Sun.map(myFun);
+
+function myFun(x){
+    return x*2;
+}
+console.log(Sun1);
+

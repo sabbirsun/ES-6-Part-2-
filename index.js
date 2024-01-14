@@ -145,3 +145,21 @@ function myFun(x){
 }
 console.log(Sun1);*/
 
+// ES6 Asynchonous
+
+/*let fun1 = () => {
+    console.log("fun1");
+}
+let LoadingTime = () => {
+    console.log("fun2");
+}
+let fun2 = () => {
+    setTimeout(LoadingTime, 2000); // 2 sec pore show korbe
+}
+let fun3 = () => {
+    console.log("fun3");
+}
+fun1()
+fun2()
+fun3()*/
+

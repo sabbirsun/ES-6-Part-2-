@@ -97,5 +97,22 @@ function Hello(){
 }
 Hello();*/
 
+// ForEach()
+// let Sun = [1,2,3,4,5];
 
+// for(let i = 0; i < Sun.length; i++){
+//     console.log(Sun[i]);
+// }
+// let Sun1 = [1,2,3,4,5];
+// for(Sun of Sun1){
+//     console.log(Sun);
+// }
+
+/*let Sun3 = [1,2,3,4,5];
+Sun3.forEach((x) => console.log(x));
+// Sun3.forEach(myFun)
+
+// function myFun(z){
+//     console.log(z);
+// }*/
 

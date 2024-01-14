@@ -53,3 +53,20 @@ let MyAssests = new Ami();
 MyAssests.Assests1();
 MyAssests.Assests2();*/
 
+// Arrow function
+
+/*let fun = function(x,y){
+    return x + y;
+}
+console.log(fun("a","b"));
+
+let func = x => x + 20;
+console.log(func(20));
+
+let fun = (x,y) => {
+
+}
+console.log(fun(50,30));*/
+
+// ES6 Symbols
+

@@ -85,3 +85,17 @@ let array = ['a','b','c','d','e'];
 for(Element of array){
     console.log(Element);
 }*/
+
+/*// Strict Mode --> vul code detect kore Solve code dey
+
+//"use strict"
+let name = 20;
+console.log(name);
+
+function Hello(){
+    num = 20;
+}
+Hello();*/
+
+
+

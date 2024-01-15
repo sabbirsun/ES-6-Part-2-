@@ -200,7 +200,7 @@ HigherOrderFun("Sabbir", "B.Sc", Display);*/
 
 // ES6 Promise => kind of login purpase
 
-let message = true; // false
+/*let message = true; // false
 let promise = new Promise((resolve, reject) => {
     if(message){
         resolve([
@@ -216,6 +216,49 @@ promise.then((s) => {
 })
 promise.catch(() => {
     console.log(error);
-})
+})*/
 
+// ES6 Async Await
 
+/*function getUser(userId){
+    return new Promise((resolve, reject) => {
+        console.log(`Get user from the database.`);
+        setTimeout(() => {
+            resolve({
+                userId: "userId",
+                username: "Sabbir"
+            });
+        }, 1000);
+    });
+}
+
+function getServices(user) {
+    return new Promise((resolve,reject) => {
+        console.log(`Get services of ${user.username} from the API.`);
+        setTimeout(() => {
+            resolve(["Email", "VPN", "CDN"]);
+        }, 2 * 1000);
+    });
+}
+
+function getServicesCost(services) {
+    return new Promise((resolve,reject) => {
+        console.log(`Calculate service costs of ${services}.`);
+        setTimeout(() => {
+            resolve(services.length * 100);
+        }, 3 * 1000);
+    });
+}
+
+async function loadData(){
+    let user = await getUser(100);
+    let service = await getServices(user);
+    let cost = await getServicesCost(service);
+    console.log(`The service cost is ${cost}`);
+}
+loadData();
+
+// getUser(100)
+//     .then(getServices)
+//     .then(getServicesCost)
+//     .then(console.log);*/

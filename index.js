@@ -163,3 +163,14 @@ fun1()
 fun2()
 fun3()*/
 
+// ES6 Callback and Higher Order Function
+
+/*let Display = (Someting) => {
+    console.log(Someting);
+}
+
+let HigherOrderFun = (Name, Class, CallBackFun) => {
+    const Details = `My name is ${Name} & I read in class ${Class}`;
+    CallBackFun(Details);
+}
+HigherOrderFun("Sabbir", "B.Sc", Display);*/

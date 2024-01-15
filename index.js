@@ -198,5 +198,24 @@ HigherOrderFun("Sabbir", "B.Sc", Display);*/
     console.log("Programmer");
 }*/
 
+// ES6 Promise => kind of login purpase
+
+let message = true; // false
+let promise = new Promise((resolve, reject) => {
+    if(message){
+        resolve([
+            {username: "Sabbir", email: "sabbirsun1234@gmail.com"},
+            {username: "Sun", email: "sabbirsun1920@gmail.com"}
+        ])
+    }else{
+        reject("User is not Valid");
+    }
+})
+promise.then((s) => {
+    console.log(s);
+})
+promise.catch(() => {
+    console.log(error);
+})
 
 

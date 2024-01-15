@@ -174,3 +174,29 @@ let HigherOrderFun = (Name, Class, CallBackFun) => {
     CallBackFun(Details);
 }
 HigherOrderFun("Sabbir", "B.Sc", Display);*/
+
+// Try Catch Throw Finally in ES6
+
+// Very important Error Handling
+
+/*try{
+    console.log("Sabbir Sun");
+    //console.log(num);
+    let age = 32;
+    if(age < 30) {
+        throw "Hello Baby";
+    }
+    else if(age > 31){
+        throw "How are you Sabbir";
+    }
+   
+}catch(SunError){
+    //console.log(SunError.name);
+    //console.log(SunError.message);
+    console.log(SunError);
+}finally{
+    console.log("Programmer");
+}*/
+
+
+

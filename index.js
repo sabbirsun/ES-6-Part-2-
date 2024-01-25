@@ -265,7 +265,7 @@ loadData();
 
 // Radio Button
 
-const group = document.querySelector(".group");
+/*const group = document.querySelector(".group");
 const output = document.querySelector(".output");
 const sizes = ["XS","S","M","L","XL","XXL"];
 
@@ -285,4 +285,19 @@ function showOutput(e){
     if(this.checked){
         document.querySelector(".output").innerHTML =`You selected ${this.value}`;
     }
-}
+}*/
+
+// Checkbox
+
+const btn = document.querySelector("#btn");
+
+btn.addEventListener("click", (e) => {
+    let checkboxes = document.querySelectorAll("input[name='color']:checked");
+    let values = [];
+
+    checkboxes.forEach((checkbox) => {
+        values.push(checkbox.value);
+    });
+
+    console.log(values);
+});

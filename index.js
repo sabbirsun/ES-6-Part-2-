@@ -289,7 +289,7 @@ function showOutput(e){
 
 // Checkbox
 
-const btn = document.querySelector("#btn");
+/*const btn = document.querySelector("#btn");
 
 btn.addEventListener("click", (e) => {
     let checkboxes = document.querySelectorAll("input[name='color']:checked");
@@ -300,4 +300,20 @@ btn.addEventListener("click", (e) => {
     });
 
     console.log(values);
-});
+});*/
+
+// Selected Box
+
+const Frameworks = document.querySelector("#Frameworks");
+const btn = document.querySelector("#btn");
+
+btn.onclick = (e) => {
+    e.preventDefault();
+    const selectedFrameworks = [].filter
+        .call(Frameworks.options, (option) => option.selected)
+        .map((option) => option.text);
+    //console.log(selectedFrameworks);
+    alert(selectedFrameworks);
+};
+
+

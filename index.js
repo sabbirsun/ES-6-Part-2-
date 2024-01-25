@@ -304,7 +304,7 @@ btn.addEventListener("click", (e) => {
 
 // Selected Box
 
-const Frameworks = document.querySelector("#Frameworks");
+/*const Frameworks = document.querySelector("#Frameworks");
 const btn = document.querySelector("#btn");
 
 btn.onclick = (e) => {
@@ -314,6 +314,40 @@ btn.onclick = (e) => {
         .map((option) => option.text);
     //console.log(selectedFrameworks);
     alert(selectedFrameworks);
-};
+};*/
 
+// Add or Remove
 
+let lastAddedElement = null;
+
+// Function to add an element
+function addElement() {
+  var elementText = document.getElementById("elementText").value;
+
+  if (elementText.trim() !== "") {
+    var newElement = document.createElement("p");
+    var textNode = document.createTextNode(elementText);
+    newElement.appendChild(textNode);
+
+    // Append the new element to the container
+    document.getElementById("elementContainer").appendChild(newElement);
+
+    // Keep track of the last added element
+    lastAddedElement = newElement;
+
+    // Clear the input field
+    document.getElementById("elementText").value = "";
+  } else {
+    alert("Please enter text for the new element.");
+  }
+}
+
+// Function to remove the last added element
+function removeElement() {
+  if (lastAddedElement) {
+    lastAddedElement.parentNode.removeChild(lastAddedElement);
+    lastAddedElement = null;
+  } else {
+    alert("No elements to remove.");
+  }
+}

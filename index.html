@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #elementContainer {
+          border: 1px solid #ccc;
+          padding: 10px;
+          margin-bottom: 10px;
+        }
+      </style>
 </head>
 <body>
     <!-- Radio Button 
@@ -35,7 +42,7 @@
     
     <button id="btn">Select Your Color</button> -->
 
-    <!-- Selected Box -->
+    <!-- Selected Box
     
     <div id="container">
         <p>Select one or more JS Frameworks: </p>
@@ -49,8 +56,22 @@
             <br><br>
             <button id="btn">Get Selected Frameworks</button>
         </form>
-    </div>
+    </div> -->
+
+    <!-- Add or Remove -->
     
+    <h2>Element Manipulation Example</h2>
+
+  <label for="elementText">Enter Element Text:</label>
+  <input type="text" id="elementText">
+  <button onclick="addElement()">Add Element</button>
+  <button onclick="removeElement()">Remove Added Element</button>
+
+  <div id="elementContainer">
+    <!-- Elements will be added/removed here -->
+  </div>
+
+
 
     <script src="index.js"></script>
 </body>

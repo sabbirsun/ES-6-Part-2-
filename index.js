@@ -318,36 +318,56 @@ btn.onclick = (e) => {
 
 // Add or Remove
 
-let lastAddedElement = null;
+/*const btnAdd = document.querySelector('#btnAdd');
+const btnRemove = document.querySelector('#btnRemove');
+const listbox = document.querySelector('#list');
+const framework = document.querySelector('#framework');
 
-// Function to add an element
-function addElement() {
-  var elementText = document.getElementById("elementText").value;
+btnAdd.onclick = (e) => {
+  e.preventDefault();
 
-  if (elementText.trim() !== "") {
-    var newElement = document.createElement("p");
-    var textNode = document.createTextNode(elementText);
-    newElement.appendChild(textNode);
-
-    // Append the new element to the container
-    document.getElementById("elementContainer").appendChild(newElement);
-
-    // Keep track of the last added element
-    lastAddedElement = newElement;
-
-    // Clear the input field
-    document.getElementById("elementText").value = "";
-  } else {
-    alert("Please enter text for the new element.");
+  // validate the option
+  if (framework.value == '') {
+    alert('Please enter the name.');
+    return;
   }
-}
+  // create a new option
+  const option = new Option(framework.value, framework.value);
+  // add it to the list
+  listbox.add(option, undefined);
 
-// Function to remove the last added element
-function removeElement() {
-  if (lastAddedElement) {
-    lastAddedElement.parentNode.removeChild(lastAddedElement);
-    lastAddedElement = null;
-  } else {
-    alert("No elements to remove.");
+  // reset the value of the input
+  framework.value = '';
+  framework.focus();
+};
+
+// remove selected option
+btnRemove.onclick = (e) => {
+  e.preventDefault();
+
+  // save the selected options
+  let selected = [];
+
+  for (let i = 0; i < listbox.options.length; i++) {
+    selected[i] = listbox.options[i].selected;
   }
-}
+
+  // remove all selected option
+  let index = listbox.options.length;
+  while (index--) {
+    if (selected[index]) {
+      listbox.remove(index);
+    }
+  }
+};*/
+
+// JS DOM Handling Change Event
+
+const message = document.querySelector("#message");
+const result = document.querySelector("#result");
+
+message.addEventListener("change", ()=>{
+    result.textContent = message.value;
+})
+
+

@@ -4,13 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        #elementContainer {
-          border: 1px solid #ccc;
-          padding: 10px;
-          margin-bottom: 10px;
-        }
-      </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Radio Button 
@@ -58,19 +52,31 @@
         </form>
     </div> -->
 
-    <!-- Add or Remove -->
+    <!-- Add or Remove 
     
-    <h2>Element Manipulation Example</h2>
+        <div id="container">
+            <form>
+                <label for="framework">Framework:</label>
+                <input type="text" id="framework" placeholder="Enter a framework" autocomplete="off">
 
-  <label for="elementText">Enter Element Text:</label>
-  <input type="text" id="elementText">
-  <button onclick="addElement()">Add Element</button>
-  <button onclick="removeElement()">Remove Added Element</button>
+                <button id="btnAdd">Add</button>
+                <br><br>
 
-  <div id="elementContainer">
-    <!-- Elements will be added/removed here -->
-  </div>
+                <label for="list">Framework List:</label>
+                <select id="list" name="list" multiple>
 
+                </select>
+                <br><br>
+                <button id="btnRemove">Remove Selected Framework</button>
+            </form>
+        </div>-->
+     
+        <!-- JS DOM Handling Change Event -->
+
+        <p>Message:</p>
+        <input type="text" name="" id="message">
+        <button>Submit</button>
+        <p id="result"></p>
 
 
     <script src="index.js"></script>

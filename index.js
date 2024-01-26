@@ -363,11 +363,21 @@ btnRemove.onclick = (e) => {
 
 // JS DOM Handling Change Event
 
-const message = document.querySelector("#message");
+/*const message = document.querySelector("#message");
 const result = document.querySelector("#result");
 
 message.addEventListener("change", ()=>{
     result.textContent = message.value;
-})
+})*/
+
+// Input Event
+
+/*const message = document.querySelector("#message");
+const result = document.querySelector("#result");
+
+message.addEventListener("input", ()=>{
+    result.textContent = message.value;
+})*/
+
 
 
